@@ -1,0 +1,181 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Mulher Segura</title>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fff0f5;
+}
+
+header {
+    background: linear-gradient(90deg, #990033, #ff4d88);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+nav {
+    background: #ff4d88;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Mulher Segura</h1>
+<p>Informação, proteção e força feminina</p>
+</header>
+
+<nav>
+<a href="#historia">História</a>
+<a href="#dia">Dia da Mulher</a>
+<a href="#leis">Leis</a>
+<a href="#mulheres">Referências</a>
+<a href="#dados">Dados</a>
+<a href="#realidade">Realidade</a>
+<a href="#autodefesa">Autodefesa</a>
+</nav>
+
+<section id="historia">
+<h2>História das mulheres</h2>
+<div class="card">
+<p>Ao longo da história, mulheres foram privadas de direitos básicos como educação e liberdade. Em muitas sociedades, eram limitadas ao ambiente doméstico.</p>
+<p>Na Revolução Industrial, passaram a trabalhar fora, mas em condições injustas.</p>
+<p>No século XX, movimentos feministas conquistaram direitos importantes como voto e educação.</p>
+<p>Apesar dos avanços, a desigualdade ainda existe, mostrando que a luta continua.</p>
+<p><b>Fonte:</b> ONU</p>
+</div>
+</section>
+
+<section id="dia">
+<h2>Dia da Mulher</h2>
+<div class="card">
+<p>O Dia Internacional da Mulher simboliza a luta histórica por igualdade, respeito e direitos.</p>
+<p>Ele surgiu de protestos por melhores condições de trabalho.</p>
+<p>Hoje é um marco global de resistência.</p>
+<p>Também é um momento de reflexão sobre desafios atuais.</p>
+<p><b>Fonte:</b> ONU Mulheres</p>
+</div>
+</section>
+
+<section id="mulheres">
+<h2>Mulheres importantes</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Marie Curie</h3>
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Marie_Curie_c1920.jpg">
+<p><b>Fonte da imagem:</b> Wikimedia Commons (domínio público)</p>
+</div>
+
+<div class="card">
+<h3>Frida Kahlo</h3>
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Frida_Kahlo_%281930%29.jpg">
+<p><b>Fonte da imagem:</b> Wikimedia Commons</p>
+</div>
+
+<div class="card">
+<h3>Rosa Parks</h3>
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Rosa_Parks_1955.jpg">
+<p><b>Fonte da imagem:</b> Wikimedia Commons</p>
+</div>
+
+<div class="card">
+<h3>Malala Yousafzai</h3>
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Malala_Yousafzai_2015.jpg">
+<p><b>Fonte da imagem:</b> Wikimedia Commons</p>
+</div>
+
+</div>
+</section>
+
+<section id="dados">
+<h2>Dados sobre violência</h2>
+<canvas id="grafico"></canvas>
+<p><b>Fonte:</b> Fórum Brasileiro de Segurança Pública (2023)</p>
+</section>
+
+<section id="realidade">
+<h2>Realidade atual</h2>
+<div class="card">
+<p>Em várias partes do mundo, mulheres ainda enfrentam violência e desigualdade.</p>
+<p>Em alguns países, não têm acesso à educação ou liberdade.</p>
+<p>Essas situações mostram a importância da luta por direitos.</p>
+<p><b>Fonte:</b> Human Rights Watch</p>
+</div>
+</section>
+
+<section id="autodefesa">
+<h2>Autodefesa</h2>
+
+<div class="grid">
+
+<img src="https://i.imgur.com/1.png">
+<img src="https://i.imgur.com/2.png">
+<img src="https://i.imgur.com/3.png">
+<img src="https://i.imgur.com/4.png">
+<img src="https://i.imgur.com/5.png">
+<img src="https://i.imgur.com/6.png">
+<img src="https://i.imgur.com/7.png">
+<img src="https://i.imgur.com/8.png">
+<img src="https://i.imgur.com/9.png">
+<img src="https://i.imgur.com/10.png">
+
+<p><b>Fonte das imagens:</b> Geradas por IA</p>
+
+</div>
+</section>
+
+<script>
+new Chart(document.getElementById('grafico'), {
+type: 'bar',
+data: {
+labels: ['Violência Doméstica','Feminicídio','Agressão'],
+datasets: [{
+data: [245000,1400,300000]
+}]
+}
+});
+</script>
+
+</body>
+</html>
